@@ -1,15 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gittoria</title>
     <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script defer src="JS/bootstrap.bundle.js"></script>
 </head>
-<body>
-    <section id="quees">
 
+<body>
+    <header></header>
+    <section id="quees" class="container-flex mt-5">
+        <article class="px-5">
+            <h1 class="text-center">¿Qué es git?</h1>
+            <div class="d-flex">
+                <div class="margenes">
+                    <p>Git es un sistema de control de versiones distribuido ampliamente utilizado en el desarrollo de
+                        software y en la gestión de proyectos que involucran archivos y código fuente. Fue creado por
+                        Linus
+                        Torvalds en 2005 y se ha convertido en una herramienta esencial para programadores y equipos de
+                        desarrollo en todo el mundo. A continuación, se explican algunos conceptos clave relacionados
+                        con
+                        Git:</p>
+                </div>
+                <div class="margenes">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAACoCAMAAACPKThEAAAAw1BMVEX////wUTNBMAA3IwAsEwA9KwDk4t87KADwTzA5JgDvSCWblYrz8u8rDwDvQBZ5b1z3qZ5eUTbvQhw0HwCKgnPvPhNWSCiSi3wxGgAwGAA8KgD96uf1k4QuFgD719Knopf0jHxEMwAnCAD8499vZVH4tKr5wbklAADQzcb1mIr2pZm+urHh39r2n5KDemnvRiK0r6VLPBf+9PL60cvKx7/4t67xXEBoXETvNQBPQB6rppy4tKvycVzzgnEcAADxZEz6ycLCvsngAAAJGUlEQVR4nO2ca3eaSheAkYuIgEZRAY3VWFo90RBNbUzs6Wn//696QQXmxsUbju/az4ezzhIinWdt9szsmVEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOHt58vzj5Kfacz1TkefGyU/9lyeP17r9cb7oMxn2hNH0jTJMfUyn3o2j41KSO31a3nP9BzxgNss76ln89iu7Km1S5O1HYox8rKsp55NrKrMyFISVaKyKumhZ4OoKi+yqibiSpxUS3no2WCqSoustYO6cmZlPPNsCFVlRdYcd7Uu4ZFnQ6kqKbLwuHKJuKo6TyEqV6OJw2Ch/MjKzlezfSdpceVqUKuxZJUQWSLSEVL94NbafS5x5SpN1vUjK3N81dF4dCUM6jeKrI0VZ3aPvLZSOHN1sHGzyOpMLLXfV62JTV4xJiJfrh4/vuz/52Y5qzryNxt/S49DD+mKG1fjdq2bLau8uSHJ4RXkxVU4rqo1IlnsnHUrWXNX5MnVeDcEjSPrjafIMuJhKheuotF6Elm1dqPRrpefs2iMzz5PrsbxxCbJWd+/fv07bhDhdYPIWvdjVTy4QueAcWTtGLzfVpYx38jI1EdpbUcxv8r8h0SMselyHFl7LiHLmC112/c7tv5rxl54GHVw/PA2w3synb6Iolgx7uakxp7HmKwsYLK+kJPpY2WtfdF0LEkLkCTLlVc9jNUovKlnaRjTcIxlTBUxHZUa3F8fSlWl9o5e/5fsEY+SNbJcFW+jgrMvHWiECHnnShYzuIErWlWl/oLe8EB2hkfIWqtWVnPjdG2YxKdcumKoqtS/oXd8f6VuqDWKybIneaYOrhZD4lMeXbFUVeoP6C0/aVcFI8t3s9qKusILyHy6Yqqq1H5j91DvYEFZOhks6a70KZGw9q6mUgB2RZFinHL7QbaqSqX9htw0eD1turOYYo3ULMexsDSvWpbjyv/tCjAz33XQTm/vqmOHrJBv2dgJo6t5YZCmqlIfo7elTKTzclYLrQkPV/ZyPd82HSlRZW9/rWfVeLy1Rv9ARuoyzcTwzcbtqaqCwHpGbzwpsmZIslHFaFnGsOMeT+0Qf1GVuXWVoSqQ9S+6Q+aUEo2f5Bmlh3y+jI1MiHUtdODAl6tMVVFkvR12YJ0gK3nZRBOb18RNxxQKHLvKURWNGz6yi3/pOWuRvFCanXLFxAOLV1d5qiJX3biedWTOQkZM5BpynMIlXCKnrnJVRa4ap5aVt8nkRiZKC17KS8inq3xVsSukUvrafW03qEppyms4SvKVQ1zy47a72OdcuiqgKnGVyHoLRqiDB/JdTJGlJ65cIq6StuMRx6OrIqoQV0Sl9O1PIVnoO0is9yUbF7h3xdg0lO2KkCVUishCcrs1x64gPSTv7+CXbhFVmCtC1g9qM9s7/ZhF0nClhV1Jms59bmeWDXJcVeqP6FeQgVVpMA4NINNkbNfUKCnUaPgshz9X5FpDIVftv+hXPJK68YLXHhuppbh+lJgMtKbl4hsd/19cYQnrhXL1TD9nMUlaLmqmN5qv11vPRKtREv4X/Lk66R3Miav2d8aDmliRrm85jmNhC1gOUYDiz9UpuZ1YraDzFetBRs6yBLXPkT9Xwj9HjxmCnq6GfAHVD3ZZYSUIsynDUIJJbrPi0FWxARbuCusIyYzXZWT2HTNZZTg6RBVZveLTVSFZhKtKO3oL3/4Q2SpVlSBUW+QaadxoZUHdzaWrIrJIV5XXP3/D+eA3cj6YoUrAi+6IKZOsH4cUcKVRO0mvT74sylWl1m7X6lSdIVtV8zCDlpLm9iXXtZknkwq4Um9xsDBXFu0q1EXdlq0q2oVt6Z4o7zD7Gz3tWFIBV+LTpQQcQ54spqtjVUVRtXtzjOqiWs06ypzmClnlEIc3Of+VI6uQq5xcdVClKMX+RWmubGSZQ/mMbRslHgXLlnVYIfw4P6pEuWCj0lxt0UFtX9Nni+pirm/k/0o8b58lK1of/J1xT/db1rfbUQFLKbrvIM3VDN9CIrmyPHQkRXTm6d91cdJlxaMp4VvqW5gdVchuBsUcSk+fLc+39RG2Ko9TRcrOwUAKkZWyXUbzL6OhGGmy6shGGWqiXEgVlpD3SUtVNWm328Ocfjb1OTZsmHurqSmh90vyVPQOp72aKcN/6+JCskiR1UD3ybBd5aiKT4UwUVTJMVd6EmC2w7rdOgTObML+mpI7ReZEGt9/xQys7FwV0Gc3DxUmTeOXSJdYd6jR9SbzMrkWe3VYkZW/ry8vqgShlxVXcWPFw5uY40pYsa6rZivt6VeCEVm5+0Vzoypofe6m2hBF27+Hea6EjUm4Vx25Wf64lJaVtw+5gCrBYGYgCmk/wdMthYGEdHTr1sSR+ooSdhJBsnOat/k1I0pW7Q96mdrfXkRVMGhQ0+oxGPsD86NeiwWWj4y57fVWT6te0InSBZ2yoGSha1hfyQFWMVUBzfz8HvR126s06XqQsmq1ZNBAVUGLqppFOSjzZbxJleUsKFnv0TlxcvdCYVXxwrPaUxzTlIeuY1mS1ifMKTepspwFJas7/jEY/HjsnqrKsA5SzN3M2aguZvPlyPabLVXGOj1yx9EdQOWsOutcamFVgnfI7BpdLa6O3Pt2VWgprLiqeNXZZHXtS2TwVe6k7kLkyyquKh5cKsyhNbKTndyMfCfkyTpClbA5lAb6zANGyLEuxjt6F2TLOkZVMh10WVeRgk2pBbtLkiXrKFWJqz6jKooeALvH1L7nn/Qq6FGqBC8es6vaCJuRVJefaGa//Y8InExaZB2pShghPiR52Gv64Sk23+u5soWe/yq4xMMn7Mg6VlX8I0yRk354iF5TyVH79HaT4EvAknW0qiAnkadyGSiTu/i1xwxoWSeoQn/dOA1Ju++oCnlpX0BVeIg+syajTUpdsroWeGSdqCoYcW4mUko9pm9N/fsPqh0vjQuoCljoLdO1NBXt+VTNGrre8t5+zz6dJLLOURVizLYd71M1JxPTDP4jfXr28j5+67gwUWR1f17qG42AS30XZzx81Ov115QdxgDO4Pn3+OEt/z4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBr8T8JDMJ97iKcJAAAAABJRU5ErkJggg=="
+                        alt="Descripción de la imagen">
+                </div>
+            </div>
+            <hr>
+            <div>
+                <ul>
+                    <li><b>Control de Versiones:</b> Git se utiliza para realizar un seguimiento de los cambios en los
+                        archivos
+                        y carpetas de un proyecto a lo largo del tiempo. Cada cambio se registra como una "revisión" o
+                        "commit", lo que permite a los desarrolladores ver la historia completa de un proyecto y
+                        revertir o fusionar cambios según sea necesario.</li>
+                    <li><b>Distribuido:</b> Git es un sistema de control de versiones distribuido, lo que significa que
+                        cada
+                        desarrollador tiene una copia completa del repositorio en su máquina local. Esto facilita el
+                        trabajo en equipo, la colaboración y la realización de cambios sin conexión a Internet.</li>
+                    <li><b>Repositorio:</b> Un repositorio de Git es una base de datos que almacena todos los archivos y
+                        la
+                        información relacionada con la historia de un proyecto. Puede ser local en tu máquina o remoto
+                        en un servidor.</li>
+                    <li><b>Branches (Ramas):</b> Git permite crear ramas o "branches" que son copias separadas del
+                        proyecto
+                        principal. Esto permite a los desarrolladores trabajar en nuevas características o solucionar
+                        problemas sin afectar la rama principal (generalmente llamada "master" o "main"). Las ramas
+                        pueden fusionarse posteriormente si se considera necesario.</li>
+                    <li><b>Commit:</b> Un "commit" es una instantánea de los cambios realizados en un momento dado en el
+                        proyecto. Cada commit incluye un mensaje descriptivo que explica el propósito de los cambios.
+                    </li>
+                    <li><b>Merge (Fusión):</b> La fusión es el proceso de combinar los cambios de una rama en otra. Esto
+                        se
+                        hace típicamente para incorporar nuevas características o correcciones de errores en la rama
+                        principal.</li>
+                    <li><b>Clonar:</b> Clonar un repositorio Git significa crear una copia completa del repositorio en
+                        tu
+                        máquina local. Esto te permite trabajar en el proyecto de manera independiente.</li>
+                    <li><b>Pull y Push:</b> "Pull" es el acto de traer los cambios de un repositorio remoto a tu copia
+                        local.
+                        "Push" es el acto de enviar tus cambios locales a un repositorio remoto.</li>
+                    <li>
+                        <b>GitHub y GitLab:</b> Estas son plataformas en línea que proporcionan alojamiento de
+                        repositorios Git, colaboración en línea y herramientas de seguimiento de problemas. Son muy
+                        populares para proyectos de código abierto y colaborativos.
+                    </li>
+                </ul>
+            </div>
+
+        </article>
     </section>
     <section id="instalacion">
 
@@ -21,4 +84,5 @@
 
     </section>
 </body>
+
 </html>

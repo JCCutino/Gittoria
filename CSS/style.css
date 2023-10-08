@@ -1,0 +1,52 @@
+.margenes{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:50px;
+}
+
+.colorTabla{
+    background: #c16321;
+}
+@media screen and (min-width:992px){
+    .nav-item {
+    line-height:80px;
+    }
+  }
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para los enlaces del footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    padding: 20px;
+    /* Añade más estilos de diseño para tu contenido principal aquí */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+

@@ -43,10 +43,3 @@ body {
     /* Añade más estilos de diseño para tu contenido principal aquí */
 }
 
-/* Estilos para el contenedor principal */
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-

@@ -1,17 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gittoria</title>
     <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
     <script defer src="JS/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-
 </head>
 
 <body>
-    <h1>Esto es Gittoria</h1>
+
+    <div class="container-fluid">
+
+        <div class="container">
+            <h2>Introducción</h2>
+            <p>GitHub es una plataforma de hospedaje de código para el control de versiones y la colaboración. Este
+                permite que tú y otras personas trabajen juntos en proyectos desde donde sea.</p>
+
+            <p>Este tutorial te enseña lo esencial de GitHub, como los repositorios, ramas, confirmaciones y
+                solicitudes de cambio. Crearás tu propio repositorio de "Hello World" y aprenderás el flujo de trabajo
+                de las solicitudes de cambio de GitHub, una forma popular de crear y revisar código.</p>
+
+            <p>En esta guía de inicio rápido:</p>
+
+            <ul>
+                <li>Crearás y utilizarás un repositorio</li>
+                <li>Iniciarás y administrarás una rama nueva</li>
+                <li>Harás cambios a un archivo y los subirás a GitHub como confirmaciones</li>
+                <li>Abrirás y fusionarás una solicitud de cambios</li>
+            </ul>
+
+            <p>Para completar este tutorial, necesita una <a href="https://github.com/">cuenta de GitHub</a> y acceso a
+                Internet. No necesitas saber cómo
+                codificar, utilizar la línea de comandos o instalar Git (el software de control de versiones en el que
+                está compilado GitHub). Si tiene alguna pregunta sobre cualquiera de las expresiones usadas en esta
+                guía, diríjase al <a href="https://shorturl.at/bmowz">glosario</a> para obtener
+                más información sobre nuestra terminología.</p>
+        </div>
+
+        <div class="container">
+            <h2>Crear un repositorio</h2>
+            <p>
+                Un repositorio se utiliza a menudo para organizar un solo proyecto. Los repositorios pueden contener
+                carpetas y archivos, imágenes, videos, hojas de cálculo y conjuntos de datos; todo lo que necesita tu
+                proyecto. A menudo, los repositorios incluyen un archivo LÉAME con información sobre el proyecto. Los
+                archivos LÉAME se escriben en el lenguaje Markdown de texto sin formato. Puede usar esta
+                <a href="https://www.markdownguide.org/cheat-sheet">hoja de referencia rápida</a> para empezar a
+                trabajar con la sintaxis de Markdown. GitHub permite agregar un
+                archivo LÉAME al mismo tiempo que crea el repositorio. GitHub también ofrece otras opciones comunes,
+                tales como un archivo de licencia, pero no teines que seleccionar ninguna de ellas ahora mismo.
+            </p>
+
+            <p>El repositorio <span class="badge bg-info">hello-world</span> puede ser un lugar donde almacene ideas,
+                recursos o incluso comparta y debata
+                cosas con otros usuarios.
+            </p>
+
+            <!-- Aquí hay que poner 6 pasos. El paso 1 tiene una imagen -->
+            <ol>
+                <li>En la esquina superior derecha de cualquier página, utiliza el menú desplegable "+" y selecciona
+                    <b>New repository </b> (Nuevo repositorio).
+                </li>
+                <!-- AQUÍ VA UNA IMAGEN -->
+                <li>En el cuadro "Nombre del repositorio", escriba <span class="badge bg-info">hello-world</span>.</li>
+                <li>En el cuadro "Descripción", escriba una breve descripción.</li>
+                <li>Seleccione si el repositorio será <b>Público</b> o <b>Privado</b>.</li>
+                <li>Seleccione <b>Agregar un archivo LÉAME</b>.</li>
+                <li>Haga clic en <b>Create repository</b> (Crear repositorio).</li>
+            </ol>
+
+        </div>
+
+
+
+        <!-- VOY POR AQUÍIIII -->
+        <!-- VOY POR AQUÍIIII -->
+        <!-- VOY POR AQUÍIIII -->
+        <!-- VOY POR AQUÍIIII -->
+        <!-- VOY POR AQUÍIIII -->
+        <!-- VOY POR AQUÍIIII -->
+        <!-- VOY POR AQUÍIIII -->
+
+
+        <div class="container">
+            <h2>Cómo crear una rama</h2>
+            <p>
+                La ramificación te permite tener versiones diferentes de un repositorio en una ocasión.
+
+                De manera predeterminada, el repositorio tiene una rama llamada main que se considera la rama
+                definitiva. Puede crear ramas adicionales fuera de main en el repositorio. Puedes utilizar ramas para
+                tener versiones diferentes de un proyecto en algún momento específico. Esto es útil cuando quieres
+                agregar características nuevas a un proyecto sin cambiar la fuente de código principal. El trabajo que
+                se hace en las diferentes ramas no se mostrará en la rama principal sino hasta que la fusiones, lo cual
+                veremos más adelante en esta guía. Puede utilizar ramas para experimentar y realizar ediciones antes de
+                confirmarlas en main.
+
+                Al crear una rama a partir de la rama main, se realiza una copia, o instantánea, de main como estaba en
+                ese momento en el tiempo. Si alguien más ha realizado cambios en la rama main mientras trabajaba en el
+                rama, podría extraer esas actualizaciones.
+
+                En este diagrama se muestra:
+
+                La rama main
+                Una nueva rama denominada feature
+                El recorrido que realiza feature antes de combinarse en main
+
+                <!-- Aquí va una imagen -->
+
+                ¿Alguna vez has guardado versiones distintas de un archivo? Algo como:
+
+                story.txt
+                story-edit.txt
+                story-edit-reviewed.txt
+
+                Las ramas logran metas similares en los repositorios de GitHub.
+
+                En GitHub, nuestros desarrolladores, escritores y diseñadores utilizan ramas para mantener las
+                correcciones de errores y el trabajo de las características separados de nuestra rama main (de
+                producción). Cuando un cambio está listo, combinan su rama en main.
+            </p>
+
+            <!-- Aquí hay que poner 4 pasos. Los pasos 2 y 4 tienen una imagen -->
+
+        </div>
+
+        <div class="container">
+            <h2>Hacer y confirmar cambios</h2>
+            <p>
+                Cuando ha creado una rama en el paso anterior, GitHub le ha llevado a la página de código de la nueva
+                rama readme-edits, que es una copia de main.
+
+                Puedes hacer y guardar cambios a los archivos de tu repositorio. En GitHub, los cambios guardados se
+                llaman confirmaciones. Cada confirmación tiene un mensaje de confirmación asociado, el cual es una
+                descripción que explica por qué se realizó algún cambio en particular. Los mensajes de confirmación
+                capturan la historia de tus cambios para que otros contribuyentes puedan entender lo que hiciste y por
+                qué.
+            </p>
+
+            <!-- Hay que poner 6 pasos -->
+
+            Estos cambios solo se realizarán en el archivo LÉAME de la rama readme-edits, por lo que ahora contiene
+            contenido diferente al de main.
+
+        </div>
+
+        <div class="container">
+            <h2>Abrir una solicitud de extracción</h2>
+            <p>
+                Ahora que tiene cambios en una rama derivada de main, puede abrir una solicitud de incorporación de
+                cambios.
+
+                Las solicitudes de cambios son el núcleo de la colaboración en GitHub. Cuando abres una solicitud de
+                cambios, estás proponiendo tus cambios y solicitando que alguien revise e integre tu contribución y la
+                fusione en su rama. Las solicitudes de cambio muestran diffs o diferencias del contenido de ambas ramas.
+                Los cambios, adiciones y sustracciones se muestran en varios colores.
+
+                Tan pronto hagas una confirmación, puedes abrir una solicitud de cambios y comenzar un debate, incluso
+                antes de que se termine el código.
+
+                Al usar la característica @mention de GitHub en el mensaje de solicitud de incorporación de cambios,
+                puede solicitar comentarios de una persona o un equipo específico, con independencia de que esté al
+                final del pasillo o a 10 zonas horarias de distancia.
+
+                Incluso puedes abrir solicitudes de cambio en tu propio repositorio y fusionarlas tú mismo. Es una forma
+                genial para aprenderse el flujo de GitHub antes de trabajar en proyectos más grandes.
+            </p>
+
+            <!-- Aquí hay que poner 8 pasos. El paso 4 tiene una imagen -->
+
+            Tus colaboradores ahora pueden revisar tus ediciones y hacer sugerencias.
+        </div>
+
+        <div class="container">
+            <h2>Fusionar tu solicitud de cambios</h2>
+            <p>
+                En este paso final, combinará la rama readme-edits en la rama main. Después de combinar la solicitud de
+                incorporación de cambios, los cambios en la rama readme-edits se incorporarán a main.
+
+                En ocasiones, una solicitud de cambios podría introducir cambios en el código que entren en conflicto
+                con el código existente en main. Si existe cualquier conflicto, GitHub te alertará sobre el código que
+                lo ocasiona y no dejará que se fusione sino hasta que esto se resuelva. Puedes hacer una confirmación
+                que resuelva los conflictos o que utilice comentarios en la solicitud de cambios para debatir estos
+                conflictos con tus miembros de equipo.
+
+                En este recorrido, no deberías de tener conflictos, así que estás listo para fusionar tu rama en la
+                principal.
+            </p>
+
+            <!-- Aquí hay que poner 3 pasos -->
+
+        </div>
+
+        <div class="container">
+            <h2>Pasos siguientes</h2>
+            <p>
+                Al haber completado este tutorial, aprendiste a crear un proyecto y hacer una solicitud de cambios en
+                GitHub.
+
+                Esto es lo que lograste en este tutorial:
+
+                Creaste y abriste un repositorio de código fuente
+                Iniciaste y administraste una rama nueva
+                Cambiaste un archivo y confirmaste esos cambios en GitHub
+                Abriste y fusionaste una solicitud de cambios
+                Echa un vistazo a tu perfil de GitHub y verás tu trabajo reflejado en tu gráfica de contribuciones.
+
+                Para más información sobre la eficacia de las ramas y las solicitudes de incorporación de cambios,
+                consulta "Flujo de GitHub". Para más información sobre cómo empezar a trabajar con GitHub, vea las otras
+                guías del inicio rápido de introducción.
+            </p>
+
+        </div>
+
+    </div>
 </body>
+
 </html>
